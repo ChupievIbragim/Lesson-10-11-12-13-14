@@ -12,10 +12,14 @@
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
-    $( function() {
-      $( "#accordion" ).accordion();
-    } );
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
   </script>
 </head>
 <body>
@@ -110,14 +114,14 @@
             </div>
             <div class="about-item">
               <div class="about-item-list">
-                <img src="/img/Frame.png" alt="" class="about-item-img">
+                <img src="./img/Frame.png" alt="" class="about-item-img">
                 <div class="about-item-div">
                   <h4 class="about-item-title">Консультация с широким активом</h4>
                   <p class="about-item-paragraph">А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений</p>
                 </div>
               </div>
               <div class="about-item-list">
-                <img src="/img/Frame1.png" alt="" class="about-item-img">
+                <img src="./img/Frame1.png" alt="" class="about-item-img">
                 <div class="about-item-div">
                   <h4 class="about-item-title">В своём стремлении повысить</h4>
                   <p class="about-item-paragraph">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества</p>
@@ -206,9 +210,9 @@
       </div>
     </section>
     <section class="questions">
-      <div class="container" id="accordion">
+      <div class="container">
         <h2 class="questions-title">Часто задаваемые вопросы</h2>
-        <ul class="questions-list" >
+        <ul class="questions-list" id="accordion">
           <li class="questions-item">
             <span class="questions-group">
               <h4 class="questions-heading-item">Из чего формируется конечная стоимость проекта?</h4>
