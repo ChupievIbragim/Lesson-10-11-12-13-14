@@ -23,17 +23,15 @@
       <div class="main-header">
         <div class="header__burger">
           <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
-          <span class="header__burger-line"></span>
         </div>
         <div class="logo">
           <a href="">
-          <img src="./img/Logo.svg" alt="logo">
+          <img src="./img/Logo.svg" alt="logo" class="logo-img">
           </a>
         </div>
         <div class="nav-list">
           <nav class="header-nav">
-            <ul class="nav-item">
+            <ul class="nav-item ">
               <li class="nav-content">
                 <a href="" class="nav-list-item">О нас</a>
               </li>
@@ -49,13 +47,17 @@
               <li class="nav-content">
                 <a href="" class="nav-list-item">Контакты</a>
               </li>
-              <li class="nav-search">
-                <a href="" class="nav-list-item">
-                  <img src="./img/search.svg" alt="search">
-                </a>
-              </li>
             </ul>
           </nav>
+        </div>
+        <div class="nav-search">
+          <div class="search-ticket">
+            <button  id="toggleButton" href="" class="nav-list-item">
+              <img id="image1" src="./img/search.svg" alt="search">
+              
+            </button>
+          </div>
+          
         </div>
       </div>
   </header>
@@ -85,7 +87,11 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+          </div>
         </div>
     </section>
     <section class="section-about">
@@ -104,14 +110,14 @@
             </div>
             <div class="about-item">
               <div class="about-item-list">
-                <img src="/img/Frame.png" alt="">
+                <img src="/img/Frame.png" alt="" class="about-item-img">
                 <div class="about-item-div">
                   <h4 class="about-item-title">Консультация с широким активом</h4>
                   <p class="about-item-paragraph">А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений</p>
                 </div>
               </div>
               <div class="about-item-list">
-                <img src="/img/Frame1.png" alt="">
+                <img src="/img/Frame1.png" alt="" class="about-item-img">
                 <div class="about-item-div">
                   <h4 class="about-item-title">В своём стремлении повысить</h4>
                   <p class="about-item-paragraph">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества</p>
@@ -123,7 +129,7 @@
       </div>
     </section>
     <section class="work">
-      <div class="container">
+      <div class="work-container">
           <h2 class="work-title">Как мы работаем</h2>
           <ul class="work-list">
             <li class="work-item work-btn-active" data-path="one">
@@ -141,17 +147,17 @@
           </ul>
         <div class="work-content work__content-desable work__content-active" data-target="one">
           <div class="work-container-main">
-          <div class="work-block">
-              <h4 class="work-block-title">Проводим консультацию</h4>
-              <p class="work-block-paragraph">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
-                А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-              <span class="work-btn-position">
-                <a href="" class="work-btn work-btn-detailed">Подробнее</a>
-                <a href="" class="work-btn work-btn-contract">Договор</a>
-              </span>
-          </div>
-          <div class="work-right-block work-right-block-bg1">
-          </div>
+            <div class="work-block">
+                <h4 class="work-block-title">Проводим консультацию</h4>
+                <p class="work-block-paragraph">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
+                  А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                <span class="work-btn-position">
+                  <a href="" class="work-btn work-btn-detailed">Подробнее</a>
+                  <a href="" class="work-btn work-btn-contract">Договор</a>
+                </span>
+            </div>
+            <div class="work-right-block work-right-block-bg1">
+            </div>
         </div>
         </div>
         <div class="work-content work__content-desable" data-target="two">
@@ -200,9 +206,9 @@
       </div>
     </section>
     <section class="questions">
-      <div class="container">
+      <div class="container" id="accordion">
         <h2 class="questions-title">Часто задаваемые вопросы</h2>
-        <ul class="questions-list" id="accordion">
+        <ul class="questions-list" >
           <li class="questions-item">
             <span class="questions-group">
               <h4 class="questions-heading-item">Из чего формируется конечная стоимость проекта?</h4>
@@ -242,7 +248,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container">
         <div class="footer-div">
           <div class="footer-block1">
             <img src="./img/Logo2.svg" alt="" class="footer-img">
